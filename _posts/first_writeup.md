@@ -1,5 +1,5 @@
 ---
-title: BlackHat MEA Qualification CTF 2024 - Writeup
+title: BlackHat MEA Qualification CTF 2024 - Forensics Writeup
 date: 
 categories: [CTF Writeups]
 tags: [forensics, ctf]
@@ -7,7 +7,7 @@ tags: [forensics, ctf]
 
  # Artifact [Forensics]
 
-Deescription: During the investigation of a compromised machine, it was determined that an impersonation tool had been executed. The Digital Forensics and Incident Response (DFIR) team has provided only a specific hive for analysis. Your objective is to identify the name of the executable associated with the impersonation tool and determine the earliest suspected execution time of this executable on the affected machine. Flag format/example: BHFlagY{cmd.exe_29/12/1992_22:33:13}
+Description: During the investigation of a compromised machine, it was determined that an impersonation tool had been executed. The Digital Forensics and Incident Response (DFIR) team has provided only a specific hive for analysis. Your objective is to identify the name of the executable associated with the impersonation tool and determine the earliest suspected execution time of this executable on the affected machine. Flag format/example: BHFlagY{cmd.exe_29/12/1992_22:33:13}
 
 ```bash
 ┌──(kali㉿kali)-[~]
