@@ -4,7 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
- # About
 
  Hey👋! I’m a 3rd-year Networks and Information Systems student with a big interest in Digital Forensics, Incident Response and blue team. Currently a CTF player for @Phr34k$ .
 
