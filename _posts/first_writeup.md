@@ -1,0 +1,30 @@
+---
+title: BlackHat MEA Qualification CTF 2024 - Writeup
+date: 
+categories: [CTF Writeups]
+tags: [forensics, ctf]
+---
+
+ # Artifact [Forensics]
+
+Deescription: During the investigation of a compromised machine, it was determined that an impersonation tool had been executed. The Digital Forensics and Incident Response (DFIR) team has provided only a specific hive for analysis. Your objective is to identify the name of the executable associated with the impersonation tool and determine the earliest suspected execution time of this executable on the affected machine. Flag format/example: BHFlagY{cmd.exe_29/12/1992_22:33:13}
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ file execution                                   
+execution: MS Windows registry file, NT/2000 or above
+```
+The challenge provided a Registry Hive file renamed as "execution", you can open using Registry Explorer from the list of Eric Zimmerman tools:
+#![regexp](\assets\posts\regexplore.png)
+
+Since the challenge about "the executable" related to impersonation tools, we can investigate relevant registry keys such as "AppCompatCache" located under:
+
+#![regexplorer](\assets\posts\registry.png)
+
+ a suspicious executable DeadPotato-NET4.exe can be identified in these enteries
+ 
+#![enteries](\assets\posts\enteries.png)
+
+therefore the flag would be:
+
+### BHFlagY{DeadPotato-NET4.exe_09/08/2024_22:42:13}
